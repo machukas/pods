@@ -28,5 +28,9 @@ Pod::Spec.new do |s|
     s.resource_bundles = {
         'Utils' => ['Utils/**/*.{storyboard,xib}']
     }
-    
+	
+	s.subspec 'Logger' do |s|
+		s.source_files = "Utils/Logger/*.swift"
+	end
+	
 end
